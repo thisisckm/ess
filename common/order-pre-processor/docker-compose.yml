@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  chameleonerpv1:
+    image: erp-uk-v1-ess-common-order-pre-processor
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 9000:8080
